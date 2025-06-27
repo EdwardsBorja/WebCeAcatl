@@ -127,4 +127,20 @@
         <span class="skill-label">Angular (learning in progress)</span>
       </div>
 
-  </div>
+       </div>
+    </div>
+   
+</body>
+  <div id="footer"></div>
+
+  <script>
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      });
+  </script>
+
+
+  
+</html>

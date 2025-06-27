@@ -11,7 +11,6 @@
     </head>
     <body>
         <header class="header">
-            <a href="home.html" class="header__logo">Edwards Borja</a>
 
             <ion-icon name="menu-outline" class="header__toggle" id="nav-toggle"></ion-icon>
 
@@ -33,7 +32,7 @@
     
                     <div class="nav__menu">
                         <ul class="nav__list">
-                            <li class="nav__item"><a href="home.html" class="nav__link active">Home</a></li>
+                            <li class="nav__item"><a href="home.html" class="nav__link">Home</a></li>
                             <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
                             <li class="nav__item"><a href="skills.html" class="nav__link">Skills</a></li>
                             <li class="nav__item"><a href="portfolio.html" class="nav__link">Portfolio</a></li>
@@ -50,10 +49,20 @@
             </nav>
         </header>
 
-        <!-- ===== IONICONS ===== -->
         <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
-
-        <!--===== MAIN JS =====-->
-        <script src="js/main.js"></script>
+       <script src="js/main.js"></script>
+        <script>
+       
+        document.addEventListener('DOMContentLoaded', function() {
+            const pageTitle = document.title.trim().toLowerCase();
+            document.querySelectorAll('.nav__link').forEach(link => {
+                if (link.textContent.trim().toLowerCase() === pageTitle) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+        });
+        </script>
     </body>
 </html>
