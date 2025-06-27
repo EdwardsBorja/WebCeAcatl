@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Inicio</title>
+    <title>CeAcatlSoft</title>
 
     <link rel="shortcut icon" href="/img/icono.png" />
     <link rel="stylesheet" href="/css/design.css">
@@ -15,42 +15,18 @@
   </head>
   <body>
 
-    <nav class="navbar navbar-expand-lg shadow-sm p-3 mb-5 bg-body rounded">
-      <div class="container-fluid" >
-        <a class="navbar-brand" href="home.html">
-          <img src="/img/CeAcatlN.png" alt="CeAcatlSoft Logo" style="width: 45px;padding-top: 0%;">
-        </a>
-        
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="services.html">Servicios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about_us.html">Acerca de</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contacto</a>
-            </li>
-            <li class="nav-item">
-              <a href="sesion.html" class="nav-link">
-                <img src="/img/person.png" alt="Iniciar Sesión" style="width: 25px;">
-              </a>
+  <div id="navbar"></div>
 
-            </li>
-
-          </ul>
-
-        </div>
-      </div>
-    </nav>
+  <script>
+    fetch('navbar.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+      });
+  </script>
 
 
-
-    <h1 class="roboto-black" style="text-align: center;">About me</h1>
+    <h1 class="roboto-black" style="text-align: center;">Bienvenido a CeAcatlSoft</h1>
   
 
 
@@ -63,51 +39,21 @@
 
 
 
-    <footer>
 
-        <div class="container__footer">
-            <div class="box__footer">
-                <div class="logo">
-                    <img src="img/CeAcatlN.png" alt="CeAcatl">
-                </div>
-                <div class="terms">
-                    <p>© 2024 CeAcatlSoft - Innovación y Tecnología</p>
-                </div>
-            </div>
-            <div class="box__footer">
-                <h2>Soluciones</h2>
-                <a href="https://www.google.com">App Desarrollo</a>
-                <a href="#">IOS Desarrollo</a>
-                <a href="#">Android Desarrollo</a>
-            </div>
-
-            <div class="box__footer">
-                <h2>Compañia</h2>
-                <a href="about_us.html">Acerca de
-                
-                </a>
-                <a href="services.html">Proyectos</a>
-                <a href="#">Procesos</a>
-                <a href="#">Servicios</a>              
-            </div>
-
-            <div class="box__footer">
-                <h2>Redes Sociales</h2>
-                <a href="https://www.facebook.com/lalo.borja.l/"> <i class="fab fa-facebook-square"></i><img src="/img/facebook.png" alt="logo" style="height: 25px;"></a>
-                <a href="https://x.com/edwards_borja"><i class="fab fa-twitter-square"></i><img src="/img/twiter.png" alt="logo" style="height: 25px;"></a>
-                <a href="https://www.linkedin.com/in/edwards-borja"><i class="fab fa-linkedin"></i><img src="/img/linkedin.png" alt="logo" style="height: 25px;"></a>
-                
-            </div>
-
-        </div>
-
-        <div class="box__copyright">
-            <hr>
-            <p>Todos los derechos reservados © 2024 <b>CeAcatlSoftware</b></p>
-        </div>
-    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
   </body>
+  <div id="footer"></div>
+
+  <script>
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      });
+  </script>
+
+
+  
 </html>
