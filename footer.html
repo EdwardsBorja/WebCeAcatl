@@ -1,45 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<footer style="background: #f2f2f2; color: #222; padding: 30px 0; text-align: center; font-family: Arial, sans-serif; border-top: 4px solid #ccc;">
+    <div style="margin-bottom: 18px;">
+        <!-- Redes sociales arriba del logo -->
+          <img src="img/CeAcatlN.png" alt="CeAcatl" style="height: 50px;"> 
+          <a style="margin: 10px 0; font-size: 1.5em; color: #333;">|</a>
+        <a href="https://www.facebook.com/lalo.borja.l" target="_blank" style="margin: 0 8px;">
+            <img src="img/facebook.png" alt="Facebook" style="height: 24px; vertical-align: middle;">
+        </a>
+        <a href="https://www.linkedin.com/in/edwards-borja" target="_blank" style="margin: 0 8px;">
+            <img src="img/link.png" alt="LinkedIn" style="height: 24px; vertical-align: middle;">
+        </a>
+        <a href="https://wa.me/526564369908?text=Hola,%20me%20gustaría%20comunicarme%20con%20usted" target="_blank" style="margin: 0 8px;">
+            <img src="img/w.png" alt="Instagram" style="height: 24px; vertical-align: middle;">
+        </a>
+        <a href="https://x.com/edwards_borja" target="_blank" style="margin: 0 8px;">
+            <img src="img/x.png" alt="X (Twitter)" style="height: 24px; vertical-align: middle;">
+        </a>
 
-        <!-- ===== CSS ===== -->
-        <link rel="stylesheet" href="css/footer.css">
-        </head> 
-        <footer>
-            <div class="container__footer">
-            <div class="box__footer">
-                <div class="logo">
-                    <img src="img/CeAcatlN.png" alt="CeAcatl">
-                </div>
-                <div class="terms">
-                    <p>© 2024 Edwards Alonso Borja Bravo - Ingeniero en Sistemas Computacionales</p>
-                </div>
-            </div>
-            <div class="box__footer">
-                <h2>Soluciones</h2>
-                <a href="https://www.google.com">App Desarrollo</a>
-                <a href="#">Web Pages</a>
-                <a href="#">Data Bases</a>
-            </div>
-
-            <div class="box__footer">
-                <h2>Redes Sociales</h2>
-                <a href="#"> <i class="fab fa-facebook-square"></i><img src="/img/facebook.png" style="width: 45px;"></a>
-                <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
-                <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
-                <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
-            </div>
-
-        </div>
-
-        <div class="box__copyright">
-            <hr>
-            <p>Todos los derechos reservados © 2024 <b>CeAcatlSoftware</b></p>
-        </div>
-
-
-        </footer>
-        
-    </html>
+    </div>
+    <div style="margin-bottom: 15px;">
+       
+    </div>
+    <div style="margin-bottom: 10px; font-size: 1.1em;">
+        © <span id="year"></span> Edwards Alonso Borja Bravo - Ingeniero en Sistemas Computacionales
+        <span style="margin-left: 12px; vertical-align: middle;">
+            <img src="img/flag.png" alt="MX" style="height: 18px; vertical-align: middle; border-radius: 2px; margin-right: 4px;">
+            <span style="font-weight: bold; font-size: 0.95em;">MX</span>
+        </span>
+    </div>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</footer>

@@ -91,12 +91,13 @@ img {
 }
 
 .header__toggle {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #222;
   cursor: pointer;
-  display: block;
+  display: block !important;
   background: none;
   border: none;
+  z-index: var(--z-fixed);
 }
 
 /*===== NAV (Mobile First) =====*/
@@ -215,7 +216,6 @@ img {
   color: var(--first-color);
 }
 
-/*===== MEDIA QUERIES =====*/
 @media screen and (min-width: 768px) {
   body {
     margin: 0;
@@ -224,7 +224,7 @@ img {
     height: calc(var(--header-height) + 1rem);
   }
   .header__toggle {
-    display: none;
+    display: none !important;
   }
   .nav {
     position: static;
