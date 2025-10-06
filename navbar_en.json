@@ -1,0 +1,10 @@
+{
+    "menu":{
+        "inicio": "Home",
+        "skills": "Skills"
+    },
+    "skills":{
+        "title": "Skills"
+        
+    }
+}
